@@ -1,0 +1,43 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "entire"
+    },
+    {
+      "path": "app/views",
+      "name": "views"
+    },
+    {
+      "path": "app/assets",
+      "name": "assets"
+    },
+    {
+      "path": "app/controllers",
+      "name": "controllers"
+    },
+    {
+      "path": "app/helpers",
+      "name": "helpers"
+    }
+  ],
+  "extensions": {
+    "recommendations": ["rebornix.ruby", "Shopify.ruby-extensions-pack"]
+  },
+  "settings": {
+    "[ruby]": {
+      "editor.defaultFormatter": "rebornix.ruby"
+    },
+    "workbench.colorTheme": "Spinel",
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "app": true,
+      "bin": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true
+    }
+  }
+}
