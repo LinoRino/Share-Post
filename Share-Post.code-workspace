@@ -22,7 +22,11 @@
     }
   ],
   "extensions": {
-    "recommendations": ["rebornix.ruby", "Shopify.ruby-extensions-pack"]
+    "recommendations": [
+      "rebornix.ruby",
+      "Shopify.ruby-extensions-pack",
+      "bradlc.vscode-tailwindcss"
+    ]
   },
   "settings": {
     "[ruby]": {
