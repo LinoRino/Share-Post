@@ -1,0 +1,15 @@
+<%# app/views/articles/index.html.erb %>
+
+<p><%= notice %></p>
+
+<h1>Welcome to LinoBlog!</h1>
+<h2>Articles</h2>
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <div>
+        <strong class="text-xl"><%= article.title %></strong>
+      </div>
+    </li>
+  <% end %>
+</ul>

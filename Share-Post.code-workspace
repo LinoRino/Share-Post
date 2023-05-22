@@ -32,6 +32,9 @@
     "[ruby]": {
       "editor.defaultFormatter": "rebornix.ruby"
     },
+    "emmet.includeLanguages": {
+      "erb": "html"
+    },
     "workbench.colorTheme": "Spinel",
     "files.exclude": {
       "**/.git": true,
