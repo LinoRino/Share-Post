@@ -32,3 +32,9 @@ end
 
 
 gem "tailwindcss-rails", "~> 2.0"
+
+gem "rubocop", "~> 1.51"
+
+gem "rubocop-rails", "~> 2.19"
+gem "rubocop-performance", "~> 1.18"
+gem "rubocop-rspec", "~> 2.22"
