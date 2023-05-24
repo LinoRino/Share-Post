@@ -7,7 +7,7 @@ require "active_model/railtie"
 require "active_record/railtie"
 # require "active_storage/engine"
 require "action_controller/railtie"
-# require "action_mailer/railtie"
+require "action_mailer/railtie"
 # require "action_mailbox/engine"
 # require "action_text/engine"
 require "action_view/railtie"
@@ -20,9 +20,10 @@ Bundler.require(*Rails.groups)
 
 module App
   class Application < Rails::Application
-    # 追加する
     Rails.application.routes.default_url_options[:host] = ENV['APP_DEFAULT_URL_HOST']
     Rails.application.routes.default_url_options[:port] = ENV['APP_DEFAULT_URL_PORT']
+
+    config.action_mailer.default_url_options = { host: ENV['APP_DEFAULT_URL_HOST'], port: ENV['APP_DEFAULT_URL_PORT'] }
   end
 end
 
