@@ -1,15 +1,18 @@
 <%# app/views/articles/index.html.erb %>
 
-<p><%= notice %></p>
+<p><%= flash_messages %></p>
 
 <h1>Welcome to LinoBlog!</h1>
 <h2>Articles</h2>
 <ul>
   <% @articles.each do |article| %>
     <li>
-      <div>
-        <strong class="text-xl"><%= article.title %></strong>
-      </div>
+      <a href="/articles/<%= article.id %>">
+        <div class="border-2 p-4 rounded-lg">
+          <strong class="text-lg"><%= article.title %></strong>
+          <p>text</p>
+        </div>
+      </a>
     </li>
   <% end %>
 </ul>
