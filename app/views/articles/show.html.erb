@@ -1,0 +1,15 @@
+<%= flash_messages %>
+
+<main>
+  <h1>
+    <%= @article.title %>
+  </h1>
+  <p><%= @created_at %></p>
+  <p>
+    <%= @article.content %>
+  </p>
+</main>
+
+<div>
+  <%= link_to "Back to articles", articles_path %>
+</div>
