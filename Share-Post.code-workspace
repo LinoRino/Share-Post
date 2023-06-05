@@ -5,6 +5,10 @@
       "name": "entire"
     },
     {
+      "path": "./config",
+      "name": "configs"
+    },
+    {
       "path": "app/views",
       "name": "views"
     },
@@ -23,19 +27,19 @@
   ],
   "extensions": {
     "recommendations": [
-      "rebornix.ruby",
       "Shopify.ruby-extensions-pack",
       "bradlc.vscode-tailwindcss"
     ]
   },
   "settings": {
     "[ruby]": {
-      "editor.defaultFormatter": "rebornix.ruby"
+      "editor.defaultFormatter": "misogi.ruby-rubocop"
     },
-    "emmet.includeLanguages": {
-      "erb": "html"
-    },
+
+    "ruby.rubocop.executePath": "",
+    "ruby.rubocop.onSave": true,
     "workbench.colorTheme": "Spinel",
+
     "files.exclude": {
       "**/.git": true,
       "**/.svn": true,

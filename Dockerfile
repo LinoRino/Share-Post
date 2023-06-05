@@ -11,6 +11,7 @@ RUN bundle install
 
 COPY containers/entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
+RUN rails tailwindcss:install
 ENTRYPOINT ["entrypoint.sh"]
 EXPOSE 3000
 
