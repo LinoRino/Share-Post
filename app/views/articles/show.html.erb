@@ -1,15 +1,21 @@
 <%= flash_messages %>
 
-<main>
-  <h1>
-    <%= @article.title %>
-  </h1>
-  <p><%= @created_at %></p>
-  <p>
-    <%= @article.content %>
-  </p>
-</main>
+<div class="grid gap-4">
+  <header>
+    <h1>
+      <%= @article.title %>
+    </h1>
+    <p class="text-gray-600">􀐫 <%= @article.created_at %></p>
+  </header>
+  <div class="p-4 rounded-lg bg-gray-100">
+    <p>
+      <%= @article.content %>
+    </p>
+  </div>
 
-<div>
-  <%= link_to "Back to articles", articles_path %>
+
+  <div>
+    <%= link_to "Back to articles", articles_path %>
+  </div>
 </div>
+

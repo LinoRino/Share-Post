@@ -4,15 +4,19 @@
 
 <h1>Welcome to LinoBlog!</h1>
 <h2>Articles</h2>
-<ul>
+<ul class="grid gap-4">
   <% @articles.each do |article| %>
     <li>
-      <a href="/articles/<%= article.id %>">
-        <div class="border-2 p-4 rounded-lg">
+      <div class="border-2 bg-white p-4 rounded-lg flex justify-between">
+        <div>
           <strong class="text-lg"><%= article.title %></strong>
           <p>text</p>
         </div>
-      </a>
+        <div>
+          <%= link_to "􁚛 Edit", edit_article_path(article) %>
+        </div>
+      </div>
     </li>
   <% end %>
+  <% link_to "articles_new"%>
 </ul>
