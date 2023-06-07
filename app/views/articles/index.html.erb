@@ -1,6 +1,6 @@
 <%# app/views/articles/index.html.erb %>
 
-<p><%= flash_messages %></p>
+<nav class=""><%= flash_messages %></nav>
 
 <h1>Welcome to LinoBlog!</h1>
 <h2>Articles</h2>
@@ -14,6 +14,7 @@
         </div>
         <div>
           <%= link_to "􁚛 Edit", edit_article_path(article) %>
+          <%= button_to "Delete", article_path(article), method: :delete %>
         </div>
       </div>
     </li>
