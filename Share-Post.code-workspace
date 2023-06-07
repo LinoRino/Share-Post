@@ -33,9 +33,8 @@
   },
   "settings": {
     "[ruby]": {
-      "editor.defaultFormatter": "misogi.ruby-rubocop"
+      "editor.defaultFormatter": "Shopify.ruby-lsp"
     },
-
     "ruby.rubocop.executePath": "",
     "ruby.rubocop.onSave": true,
     "workbench.colorTheme": "Spinel",
