@@ -15,7 +15,6 @@ class ArticlesController < ApplicationController
 
   def edit; end
 
-
   def create
     @article = Article.new(article_params)
 
@@ -46,6 +45,6 @@ class ArticlesController < ApplicationController
   end
 
   def article_params
-    params.require(:article).permit(:title, :content)
+    params.require(:article).permit(:title, :content, :thumbnail)
   end
 end

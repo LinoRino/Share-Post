@@ -31,3 +31,4 @@
 
 /config/*.local.yml
 /config/credentials/local.*
+/storage

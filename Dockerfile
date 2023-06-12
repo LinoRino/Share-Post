@@ -12,6 +12,7 @@ RUN bundle install
 COPY containers/entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 RUN rails tailwindcss:install
+RUN apt update -qq && apt install -y --no-install-recommends vim libvips42
 ENTRYPOINT ["entrypoint.sh"]
 EXPOSE 3000
 
