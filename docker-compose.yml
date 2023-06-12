@@ -8,7 +8,6 @@ services:
       - bundle:/usr/local/bundle
     environment:
       - RAILS_ENV=development
-      - DB_DATABASE_NAME= share_post
       - APP_DEFAULT_URL_HOST=localhost
       - APP_DEFAULT_URL_PORT=3000
     depends_on:

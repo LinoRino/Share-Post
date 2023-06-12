@@ -43,3 +43,7 @@ gem "rubocop", "~> 1.51"
 gem "rubocop-rails", "~> 2.19"
 gem "rubocop-performance", "~> 1.18"
 gem "rubocop-rspec", "~> 2.22"
+
+gem "anyway_config", "~> 2.4"
+
+gem "image_processing", "~> 1.12"

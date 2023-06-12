@@ -26,8 +26,8 @@ module App
     # NOTE: path should be relative to the project root (Rails.root)
     # config.anyway_config.autoload_static_config_path = "config/configs"
     #
-    Rails.application.routes.default_url_options[:host] = ENV.fetch('APP_DEFAULT_URL_HOST', nil)
-    Rails.application.routes.default_url_options[:port] = ENV.fetch('APP_DEFAULT_URL_PORT', nil)
+    Rails.application.routes.default_url_options[:host] = AppConfig.default_url_host
+    Rails.application.routes.default_url_options[:port] = AppConfig.default_url_port
 
     config.action_mailer.default_url_options = {
       host: ENV.fetch('APP_DEFAULT_URL_HOST', nil),
