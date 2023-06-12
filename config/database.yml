@@ -4,9 +4,9 @@ default: &default
   adapter: mysql2
   encoding: utf8mb4
   charaset: utf8mb4
-  host: <%= ENV['DB_DATABASE_HOST'] %>
-  username: <%= ENV['DB_DATABASE_USER'] %>
-  password: <%= ENV['DB_DATABASE_PASSWORD'] %>
+  host: <%= Rails.application.credentials.db[:database_host] %>
+  username: <%= Rails.application.credentials.db[:database_user] %>
+  password: <%= Rails.application.credentials.db[:database_password] %>
   database: <%= ENV['DB_DATABASE_NAME'] %>
 
 development:
